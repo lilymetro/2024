@@ -1,0 +1,149 @@
+report-only:
+  enable: false
+  directives:
+    default-src:
+      base: self
+    connect-src:
+      base: self
+      sources:
+        - 'https://www.facebook.com'
+        - 'https://analytics.google.com'
+    font-src:
+      base: self
+      sources:
+        - 'data:'
+        - fonts.gstatic.com
+        - use.typekit.net
+    frame-src:
+      base: self
+      sources:
+        - 'data:'
+        - 'https://www.facebook.com'
+        - 'https://*.ytimg.com'
+        - 'https://*.ggpht.com'
+        - 'https://*.gstatic.com'
+        - 'https://*.google-analytics.com'
+        - 'https://*.analytics.google.com'
+        - 'https://*.googletagmanager.com'
+        - 'https://*.g.doubleclick.net'
+        - 'https://*.google.com'
+        - 'https://player.vimeo.com'
+        - 'https://*.youtube.com'
+        - 'https://static.addtoany.com'
+    img-src:
+      base: self
+      sources:
+        - 'data:'
+        - 'https://www.facebook.com'
+        - 'https://*.ytimg.com'
+        - 'https://*.ggpht.com'
+        - 'https://*.gstatic.com'
+        - 'https://*.google-analytics.com'
+        - 'https://*.analytics.google.com'
+        - 'https://*.googletagmanager.com'
+        - 'https://*.g.doubleclick.net'
+        - 'https://*.google.com'
+    object-src:
+      base: none
+    script-src:
+      base: self
+      flags:
+        - unsafe-inline
+        - unsafe-eval
+      sources:
+        - 'https://connect.facebook.net/'
+        - 'https://www.facebook.com'
+        - 'https://*.google.com'
+        - 'https://*.googleapis.com'
+        - 'https://*.googletagmanager.com'
+        - 'https://*.youtube.com'
+        - 'https://*.google-analytics.com'
+        - 'https://*.gstatic.com'
+        - 'https://*.doubleclick.net'
+        - 'https://*.ytimg.com'
+        - 'https://js-agent.newrelic.com'
+    style-src:
+      base: self
+      flags:
+        - unsafe-inline
+      sources:
+        - p.typekit.net
+    frame-ancestors:
+      base: self
+  reporting:
+    plugin: none
+enforce:
+  enable: true
+  directives:
+    default-src:
+      base: self
+    connect-src:
+      base: self
+      sources:
+        - 'https://www.facebook.com'
+        - 'https://analytics.google.com'
+    font-src:
+      base: self
+      sources:
+        - 'data:'
+        - fonts.gstatic.com
+        - use.typekit.net
+    frame-src:
+      base: self
+      sources:
+        - 'data:'
+        - 'https://www.facebook.com'
+        - 'https://*.ytimg.com'
+        - 'https://*.ggpht.com'
+        - 'https://*.gstatic.com'
+        - 'https://*.google-analytics.com'
+        - 'https://*.analytics.google.com'
+        - 'https://*.googletagmanager.com'
+        - 'https://*.g.doubleclick.net'
+        - 'https://*.google.com'
+        - 'https://player.vimeo.com'
+        - 'https://*.youtube.com'
+        - 'https://static.addtoany.com'
+    img-src:
+      base: self
+      sources:
+        - 'data:'
+        - 'https://www.facebook.com'
+        - 'https://*.ytimg.com'
+        - 'https://*.ggpht.com'
+        - 'https://*.gstatic.com'
+        - 'https://*.google-analytics.com'
+        - 'https://*.analytics.google.com'
+        - 'https://*.googletagmanager.com'
+        - 'https://*.g.doubleclick.net'
+        - 'https://*.google.com'
+    object-src:
+      base: none
+    script-src:
+      base: self
+      flags:
+        - unsafe-inline
+        - unsafe-eval
+      sources:
+        - 'https://connect.facebook.net/'
+        - 'https://www.facebook.com'
+        - 'https://*.google.com'
+        - 'https://*.googleapis.com'
+        - 'https://*.googletagmanager.com'
+        - 'https://*.youtube.com'
+        - 'https://*.google-analytics.com'
+        - 'https://*.gstatic.com'
+        - 'https://*.doubleclick.net'
+        - 'https://*.ytimg.com'
+        - 'https://js-agent.newrelic.com'
+    style-src:
+      base: self
+      flags:
+        - unsafe-inline
+      sources:
+        - p.typekit.net
+    frame-ancestors:
+      base: self
+    upgrade-insecure-requests: true
+  reporting:
+    plugin: none
